@@ -2,18 +2,19 @@ package org.example;
 
 public class OperacionesArray {
     private int[] numeros;
+    int tamanyo;
 
     public OperacionesArray() {
-        numeros = new int[5];
-    }
-
-    public OperacionesArray(int tamanyo) {
         numeros = new int[tamanyo];
     }
 
-    public OperacionesArray(int numeros[]) {
-        this.numeros = numeros;
+    public void OperacionesArrays(int tamanyo) {
+        numeros = new int[tamanyo];
     }
+
+    /*public OperacionesArray(int numeros[]) {
+        this.numeros = numeros;
+    }*/
 
     public void cargar() {
         for (int i = 0; i < numeros.length; i++) {
