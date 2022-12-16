@@ -1,20 +1,29 @@
 package org.example;
 
+import java.util.Arrays;
+
 public class OperacionesArray {
     private int[] numeros;
-    int tamanyo;
+
 
     public OperacionesArray() {
-        numeros = new int[tamanyo];
+        numeros = new int[3];
     }
 
     public void OperacionesArrays(int tamanyo) {
         numeros = new int[tamanyo];
     }
 
-    /*public OperacionesArray(int numeros[]) {
-        this.numeros = numeros;
-    }*/
+    @Override
+    public String toString() {
+        return "OperacionesArray{" +
+                "numeros=" + Arrays.toString(numeros) +
+                '}';
+    }
+
+    public int[] getNumeros() {
+        return numeros;
+    }
 
     public void cargar() {
         for (int i = 0; i < numeros.length; i++) {
@@ -24,32 +33,36 @@ public class OperacionesArray {
 
     public double media() {
         double media = 0;
-        for (int i = 0; i < numeros.length; i++) {
-            media=media+numeros[i];
+        for (int i = 0; i < this.numeros.length; i++) {
+            media = media + this.numeros[i];
         }
-        media=media/ numeros.length;
+        media = media / this.numeros.length;
         return media;
     }
 
-    public int[] ordenar(){
-        int ordenado [] = new int [numeros.length];
+    public String ordenar() {
+        int ordenado[] = new int[numeros.length];
         for (int i = 0; i < numeros.length; i++) {
-            ordenado[i]=numeros[i];
+            ordenado[i] = numeros[i];
         }
-        return ordenado;
+        Arrays.sort(ordenado);
+        return "ArrayOrdenado{" +
+                "numeros=" + Arrays.toString(ordenado) +
+                '}';
     }
 
-    public int[] invertir(){
-        int invertido [] = new int [numeros.length];
-        for (int i = 0; i < numeros.length; i++) {
-            invertido[i]=numeros[i];
-        }
-        for (int i = 0; i < invertido.length; i++) {
-            for (int j = 0; j < invertido.length; j++) {
-                int aux = invertido[i];
+    public void setNumeros(int[] numeros) {
+        this.numeros = numeros;
+    }
 
-            }
+    public String invertir() {
+        int invertido[] = new int[this.numeros.length];
+        for (int i = 0; i < this.numeros.length; i++) {
+            invertido[i] = this.numeros[this.numeros.length - 1 - i];
         }
-        return invertido;
+
+        return "ArrayInvertido{" +
+                "numeros=" + Arrays.toString(invertido) +
+                '}';
     }
 }

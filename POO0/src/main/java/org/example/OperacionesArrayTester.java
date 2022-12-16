@@ -1,5 +1,6 @@
 package org.example;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class OperacionesArrayTester {
@@ -7,10 +8,12 @@ public class OperacionesArrayTester {
         Scanner teclado = new Scanner(System.in);
         OperacionesArray op = new OperacionesArray();
         System.out.println("Introduzca cuantos número quiere que tenga el array.");
-        op.tamanyo = teclado.nextInt();
-        op.OperacionesArrays(op.tamanyo);
+        int tamanyo = teclado.nextInt();
+        op.OperacionesArrays(tamanyo);
         op.cargar();
-        System.out.println(op.media());
-
+        System.out.println(op);
+        System.out.println("La media es "+op.media());
+        System.out.println(op.ordenar());
+        System.out.println(op.invertir());
     }
 }
