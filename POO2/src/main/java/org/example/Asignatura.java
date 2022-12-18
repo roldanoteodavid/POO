@@ -6,6 +6,7 @@ public class Asignatura {
 
     public Asignatura(int id) {
         this.id = id;
+        this.nota = 0;
     }
 
     public int getId() {
