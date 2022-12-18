@@ -6,4 +6,8 @@ public class Profesor {
         alumno.getB().setNota(Math.random()*10);
         alumno.getC().setNota(Math.random()*10);
     }
+
+    public double calcularMedia(Alumno alumno){
+        return (alumno.getA().getNota()+alumno.getB().getNota()+alumno.getC().getNota())/3;
+    }
 }
