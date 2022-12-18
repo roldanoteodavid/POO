@@ -5,6 +5,12 @@ public class Triangulo {
     private Punto b;
     private Punto c;
 
+    public Triangulo(Punto a, Punto b, Punto c){
+        this.a=a;
+        this.b=b;
+        this.c=c;
+    }
+
     public Triangulo(){
         a = new Punto();
         b = new Punto();
@@ -35,9 +41,9 @@ public class Triangulo {
 
     public double calcularArea (){
         double area;
-        double ladoab = Math.sqrt (Math.pow(a.x-b.x,2) + Math.pow(a.y-b.y,2));
-        double ladoac = Math.sqrt (Math.pow(a.x-c.x,2) + Math.pow(a.y-c.y,2));
-        double ladobc = Math.sqrt (Math.pow(b.x-c.x,2) + Math.pow(b.y-c.y,2));
+        double ladoab = a.calcularDistanciaDesde(b);
+        double ladoac = a.calcularDistanciaDesde(c);
+        double ladobc = b.calcularDistanciaDesde(c);
         double semi = (ladoab + ladoac + ladobc)/2;
         area = Math.sqrt(semi*(semi-ladoab)*(semi-ladoac)*(semi-ladobc));
         return area;
@@ -45,9 +51,9 @@ public class Triangulo {
 
     public double calcularPerimetro(){
         double perimetro;
-        double ladoab = Math.sqrt (Math.pow(a.x-b.x,2) + Math.pow(a.y-b.y,2));
-        double ladoac = Math.sqrt (Math.pow(a.x-c.x,2) + Math.pow(a.y-c.y,2));
-        double ladobc = Math.sqrt (Math.pow(b.x-c.x,2) + Math.pow(b.y-c.y,2));
+        double ladoab = a.calcularDistanciaDesde(b);
+        double ladoac = a.calcularDistanciaDesde(c);
+        double ladobc = b.calcularDistanciaDesde(c);
         perimetro = (ladoab + ladoac + ladobc);
         return perimetro;
     }
