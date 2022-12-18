@@ -1,8 +1,8 @@
 package org.example;
 
 public class Punto {
-    private double x;
-    private double y;
+    public double x;
+    public double y;
 
     public Punto(){
         x=0;

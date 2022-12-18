@@ -20,9 +20,9 @@ public class Circulo {
         return centro;
     }
 
-    /*public double calcularDistanciaDesdeCirculo (Punto c, double radio){
-        return (Math.sqrt (Math.pow(c.x-x,2) + Math.pow(cr.y-y,2)))-radio;
-    }*/
+    public double calcularDistanciaDesde(Punto v){
+        return (centro.calcularDistanciaDesde(v)-radio);
+    }
 
     public double calcularPerimetro() {
         double perimetro;
