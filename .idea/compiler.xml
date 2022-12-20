@@ -6,10 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="POO4" />
         <module name="Granja" />
         <module name="POO1" />
         <module name="POO0" />
+        <module name="POO3" />
         <module name="POO2" />
+        <module name="Medico" />
       </profile>
     </annotationProcessing>
   </component>
