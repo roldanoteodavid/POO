@@ -9,7 +9,7 @@ public class LlamadaProvincial extends Llamada {
 
     @Override
     public int coste() {
-        int coste;
+        int coste = 0;
         if (franja == 1)
             coste = getDuracion() * 20;
         else if (franja == 2) {
@@ -17,6 +17,6 @@ public class LlamadaProvincial extends Llamada {
         } else if (franja == 3) {
             coste = getDuracion() * 30;
         }
-        return 0;
+        return coste;
     }
 }

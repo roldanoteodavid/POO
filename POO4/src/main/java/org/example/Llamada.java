@@ -24,4 +24,13 @@ public abstract class Llamada {
     }
 
     public abstract int coste();
+
+    @Override
+    public String toString() {
+        return "Llamada{" +
+                "norigen=" + norigen +
+                ", ndestino=" + ndestino +
+                ", duracion=" + duracion +
+                '}';
+    }
 }
