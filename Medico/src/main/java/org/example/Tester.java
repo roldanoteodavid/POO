@@ -1,4 +1,4 @@
-package org.example;
+package Medico.src.main.java.org.example;
 
 import java.util.Scanner;
 

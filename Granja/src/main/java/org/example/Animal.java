@@ -1,12 +1,14 @@
-package org.example;
+package Granja.src.main.java.org.example;
 
 public abstract class Animal {
-    protected String nombre;
-    protected int edad;
+    private String nombre;
+    private int edad;
+    private int id;
 
-    public Animal(String nombre, int edad) {
+    public Animal(String nombre, int edad, int id) {
         this.nombre = nombre;
         this.edad = edad;
+        this.id = id;
     }
 
     public String getNombre() {
@@ -15,6 +17,14 @@ public abstract class Animal {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public int getEdad() {

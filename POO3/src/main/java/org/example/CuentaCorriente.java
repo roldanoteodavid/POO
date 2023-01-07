@@ -1,4 +1,4 @@
-package org.example;
+package POO3.src.main.java.org.example;
 
 public class CuentaCorriente {
     private Titular titular;

@@ -1,4 +1,4 @@
-package org.example;
+package POO4.src.main.java.org.example;
 
 public abstract class Llamada {
     private int norigen;
