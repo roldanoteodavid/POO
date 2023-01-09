@@ -4,7 +4,7 @@ public class Vaca extends Animal{
     private int litrosLeche;
 
     public Vaca(String nombre, int edad, int id, int litrosLeche) {
-        super(nombre, edad, id);
+        super(id, nombre, edad);
         this.litrosLeche = litrosLeche;
     }
 

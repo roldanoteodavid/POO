@@ -1,14 +1,20 @@
 package org.example;
 
 public abstract class Animal {
-    private String nombre;
-    private int edad;
-    private int id;
+    protected String nombre;
+    protected int edad;
+    protected int id;
 
-    public Animal(String nombre, int edad, int id) {
+    public Animal() {
+        this.id = (int) (Math.random()*10);
+        this.nombre = this.getClass().getSimpleName()+ this.id;
+        this.edad = 0;
+    }
+
+    public Animal(int id, String nombre, int edad) {
+        this.id = id;
         this.nombre = nombre;
         this.edad = edad;
-        this.id = id;
     }
 
     public String getNombre() {

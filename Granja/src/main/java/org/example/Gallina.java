@@ -1,11 +1,21 @@
 package org.example;
 
-public class Gallina extends Animal{
+public class Gallina extends Animal {
 
     private int huevosDia;
 
+    public Gallina() {
+        super();
+        huevosDia = (int) (Math.random() * 8);
+    }
+
+    public Gallina(int huevos) {
+        super();
+        this.huevosDia = huevos;
+    }
+
     public Gallina(String nombre, int edad, int id, int huevosDia) {
-        super(nombre, edad, id);
+        super(id, nombre, edad);
         this.huevosDia = huevosDia;
     }
 
@@ -19,7 +29,10 @@ public class Gallina extends Animal{
 
     @Override
     public boolean rentable() {
-        return huevosDia > 5;
+        boolean renta = false;
+        if (huevosDia>=5)
+            renta =true;
+        return renta;
     }
 
     @Override
