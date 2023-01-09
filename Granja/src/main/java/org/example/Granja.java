@@ -1,4 +1,4 @@
-package Granja.src.main.java.org.example;
+package org.example;
 
 import java.util.Scanner;
 

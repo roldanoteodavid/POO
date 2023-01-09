@@ -1,4 +1,4 @@
-package POO4.src.main.java.org.example;
+package org.example;
 
 public class Centralita {
     private Llamada[] llamadas;

@@ -1,4 +1,4 @@
-package POO4.src.main.java.org.example;
+package org.example;
 
 public class Practica7a {
     public static void main(String[] args) {

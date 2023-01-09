@@ -1,4 +1,4 @@
-package Medico.src.main.java.org.example;
+package org.example;
 
 public class MedicoCentroSalud extends Medico {
 

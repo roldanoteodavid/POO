@@ -1,4 +1,4 @@
-package Granja.src.main.java.org.example;
+package org.example;
 
 public abstract class Animal {
     private String nombre;
