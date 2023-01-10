@@ -29,4 +29,14 @@ public class CentroSalud {
     public int getLocalidad() {
         return localidad;
     }
+
+    @Override
+    public String toString() {
+        return "CentroSalud{" +
+                "identificador=" + identificador +
+                ", nombre='" + nombre + '\'' +
+                ", domicilio='" + domicilio + '\'' +
+                ", localidad=" + localidad +
+                '}';
+    }
 }

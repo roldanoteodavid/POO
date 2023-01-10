@@ -18,7 +18,10 @@ public class Vaca extends Animal{
 
     @Override
     public boolean rentable() {
-        return litrosLeche > 5;
+        boolean renta = false;
+        if (litrosLeche>=50)
+            renta =true;
+        return renta;
     }
     @Override
     public String toString() {

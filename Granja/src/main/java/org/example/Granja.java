@@ -36,11 +36,11 @@ public class Granja {
         if (teclado.nextInt() == 1) {
             System.out.println("Introduzca la media de litros de leche/día de la vaca");
             int leche = teclado.nextInt();
-            Vaca vaca = new Vaca(nombre, edad, id, leche);
+            Animal vaca = new Vaca(nombre, edad, id, leche);
         } else {
             System.out.println("Introduzca la media de huevos/día de la gallina");
             int huevos = teclado.nextInt();
-            Gallina gallina = new Gallina(nombre, edad, id, huevos);
+            Animal gallina = new Gallina(nombre, edad, id, huevos);
         }
     }
 
