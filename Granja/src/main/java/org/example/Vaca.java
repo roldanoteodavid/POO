@@ -2,6 +2,10 @@ package org.example;
 
 public class Vaca extends Animal{
     private int litrosLeche;
+    public Vaca() {
+        super();
+        litrosLeche = (int) (Math.random() * 8);
+    }
 
     public Vaca(String nombre, int edad, int id, int litrosLeche) {
         super(id, nombre, edad);
@@ -25,7 +29,7 @@ public class Vaca extends Animal{
     }
     @Override
     public String toString() {
-        return "Gallina{" +
+        return "Vaca{" +
                 "id=" + getId() +
                 ", nombre='" + getNombre() +
                 ", edad=" + getEdad() +

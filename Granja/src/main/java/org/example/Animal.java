@@ -7,8 +7,8 @@ public abstract class Animal {
 
     public Animal() {
         this.id = (int) (Math.random()*10);
-        this.nombre = this.getClass().getSimpleName()+ this.id;
-        this.edad = 0;
+        this.nombre = Utilidades.nombres[(int)(Math.random()*Utilidades.nombres.length)];
+        this.edad = Utilidades.edad[(int)(Math.random()*Utilidades.edad.length)];
     }
 
     public Animal(int id, String nombre, int edad) {
